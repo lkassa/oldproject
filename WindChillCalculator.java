@@ -21,11 +21,11 @@ public class WindChillCalculator {
         String station;
         double chill;      
  
- // Prompted user for the country
+ // Prompt user for the country
         country = TerminalUI.promptForUnitlessInt( keyboard, 
             "Canada (0), Mexico (1), or U.S. (2):" );
   
- // Prompt the user for the temperature 
+ // Prompt user for the temperature 
         if ( country == CANADA || country == MEXICO ) {
         
             temperature = TerminalUI.promptForDouble( keyboard,
@@ -57,13 +57,10 @@ public class WindChillCalculator {
       
 // Prompt the user for the ICAO
         station = TerminalUI.promptForString( keyboard, "Station:" );
-        
-
-        
+          
  
 //Calculate the wind chill value in standard units.
-        //Determine whether the wind chill value is dangerous or not.
-      //Convert the wind chill value to local units.
+        
 
         if ( country == CANADA ) {
             chill = Weather.windChill( temperature, windsp );
