@@ -2,14 +2,13 @@ package com.company;
 
 /**
  * Calculation for weather. 
- *
  * @author Letu Kassa
  * @version October 18, 2017
  */
 public class Weather {
 
 /**
- * Calculate the wind chill value.
+ * Calculated the wind chill value.
  * @param t temperature
  * @param v wind velocity
  * @return formula of wind
